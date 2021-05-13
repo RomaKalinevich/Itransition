@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link href="~/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <header class="p-3 bg-dark text-white">
+        <div class="container">
+            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+                    <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"></use></svg>
+                </a>
+
+                <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                    <li><a asp-controller="Home" asp-action="Index" class="nav-link px-2 text-secondary">Home</a></li>
+                    @*<li><a href="#" class="nav-link px-2 text-white">Features</a></li>
+                    <li><a href="#" class="nav-link px-2 text-white">Pricing</a></li>
+                    <li><a href="#" class="nav-link px-2 text-white">FAQs</a></li>
+                    <li><a href="#" class="nav-link px-2 text-white">About</a></li>*@
+                </ul>
+
+                <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
+                    <input type="search" class="form-control form-control-dark" placeholder="Search..." aria-label="Search">
+                </form>
+
+                <div class="text-end">
+                    @{
+                        if (User.Identity.IsAuthenticated)
+                        {
+                                        <form method="post" asp-controller="Home" asp-action="Logout">
+                                            <a type="submit" class="btn btn-outline-light me-2" asp-controller="Home" asp-action="Create">Create Company</a>
+                                            <a type="submit" class="btn btn-outline-light me-2" asp-controller="Roles" asp-action="Index">Admin room</a>
+                                            <button type="submit" class="btn btn-outline-light me-2">Exit</button>
+                                        </form>
+                        }
+                        else
+                        {
+                            <a type="submit" class="btn btn-outline-light me-2" asp-controller="Account" asp-action="Login">Login</a>
+                            <a type="submit" class="btn btn-warning" asp-controller="Account" asp-action="Register">Sign-up</a>
+                        }
+
+                    }
+                </div>
+            </div>
+        </div>
+    </header>
+    @*<div class="container mt-5">*@
+    <div class="container">
+            @RenderBody() 
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="~/js/popper.min.js" crossorigin="anonymous"></script>
+    <script src="~/js/bootstrap.min.js" crossorigin="anonymous"></script>
+</body>
+</html>

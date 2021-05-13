@@ -1,0 +1,75 @@
+﻿@model WebApplication1.ViewModels.CreateViewModel
+<h2>Создание компании</h2>
+<form method="post" asp-controller="Home" asp-action="Create">
+    <div asp-validation-summary="ModelOnly"></div>
+    <div>
+        <label asp-for="Name"></label><br />
+        <input asp-for="Name" />
+        <span asp-validation-for="Name"></span>
+    </div>
+    <div class="form-group">
+        <input type="hidden"
+               role="uploadcare-uploader"
+               data-crop="free" asp-for="mainImg" class="form-control" />
+    </div>
+    <span asp-validation-for="mainImg" class="text-danger"></span>
+    <div>
+        <label asp-for="shortDesc"></label><br />
+        <input asp-for="shortDesc" />
+        <span asp-validation-for="shortDesc"></span>
+    </div>
+    <div>
+        <label asp-for="longDecs"></label><br />
+        <input asp-for="longDecs" />
+        <span asp-validation-for="longDecs"></span>
+    </div>
+    <div>
+        <label asp-for="price"></label><br />
+        <input asp-for="price" />
+        <span asp-validation-for="price"></span>
+    </div>
+    <div>
+        <input type="submit" value="Создать" />
+    </div>
+</form>
+<script>jQuery(function ($) {
+        $('#summernote').summernote({
+            minHeight: 300,
+            toolbar: [
+                ['uploadcare', ['uploadcare']],
+                ['style', ['style']],
+                ['font', ['bold', 'italic', 'underline', 'clear']],
+                ['fontname', ['fontname']],
+                ['color', ['color']],
+                ['para', ['ul', 'ol', 'paragraph']],
+                ['height', ['height']],
+                ['table', ['table']],
+                ['insert', ['link', 'hr']],
+                ['misc', ['fullscreen', 'codeview','undo','redo']]
+            ],
+            disableDragAndDrop: true,
+            uploadcare: {
+                buttonLabel: 'Image',
+
+                buttonIcon: 'picture-o',
+
+                tooltipText: 'Upload images',
+
+                publicKey: '471545bc641d90ab4a8d',
+                crop: 'free',
+                tabs: 'file url facebook gdrive dropbox instagram vk',
+                multiple: true
+            }
+        });
+    });</script>
+<script>UPLOADCARE_PUBLIC_KEY = '471545bc641d90ab4a8d',
+    UPLOADCARE_LOCALE = 'ru',
+    UPLOADCARE_TABS = 'file url facebook gdrive dropbox instagram vk',
+    UPLOADCARE_EFFECTS = 'crop,rotate,mirror,flip,enhance,sharp,blur,grayscale,invert',
+    UPLOADCARE_IMAGES_ONLY = true,
+    UPLOADCARE_PREVIEW_STEP = true,
+    UPLOADCARE_CLEARABLE = true,
+    UPLOADCARE_</script>
+
+<script src="https://ucarecdn.com/libs/widget/3.x/uploadcare.full.min.js"></script>
+<script src="https://ucarecdn.com/libs/widget-tab-effects/1.x/uploadcare.tab-effects.js"></script>

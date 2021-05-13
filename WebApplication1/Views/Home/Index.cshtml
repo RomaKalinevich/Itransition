@@ -1,0 +1,52 @@
+﻿@model IEnumerable<WebApplication1.Models.Company>
+@*<div class="row mt-5 mb-2">
+    @{
+        foreach (var company in Model)
+        {
+        <div class="col-lg-4">
+            <h2>Model: @company.Name</h2>
+            <img src ="@company.mainImg">
+            <p>long: @company.longDecs</p>
+            <p>short: @company.shortDesc</p>
+            <p>price: @company.price.ToString("c")</p>
+        </div>
+        }
+    }
+</div>*@
+
+<div class="album py-5 bg-light">
+    <div class="container">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+            @{
+                foreach (var company in Model)
+                {
+            <div class="col">
+                <div class="card shadow-sm">
+                    <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="@company.mainImg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em"/>
+
+                    <div class="card-body">
+                        <h2>@company.Name</h2>
+                        <p class="card-text">@company.shortDesc</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                @if (User.Identity.IsAuthenticated)
+                                {
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                                }
+                            </div>
+                            <button type="button" class="btn btn-primary small">
+                                Нравится <span class="badge badge-light">@company.likesUp</span>
+                            </button>
+                            <button type="button" class="btn btn-primary small">
+                                Не нравится <span class="badge badge-light">@company.likesDown</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                    }
+                }
+        </div>
+    </div>
+  </div>
