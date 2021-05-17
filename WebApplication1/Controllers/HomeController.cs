@@ -61,11 +61,31 @@ namespace WebApplication1.Controllers
             await _signInManager.SignOutAsync();
             return RedirectToAction("Index", "Home");
         }
+
+        public async Task<IActionResult> Edit(Guid? id)
+        {
+            if (id != null)
+            {
+                Company company = await db.Company.FirstOrDefaultAsync(p => p.Id == id);
+                if (company != null)
+                    return View(company);
+            }
+            return NotFound();
+        }
+        [HttpPost]
+        public async Task<IActionResult> Edit(Company company)
+        {
+            db.Company.Update(company);
+            await db.SaveChangesAsync();
+            return RedirectToAction("Index", "Home");
+        }
+
+
         public async Task<IActionResult> Details(Guid id)
         {
             if (id != null)
             {
-                List<Company> compModels = db.Company.Select(c => new Company { Id = c.Id, Name = c.Name, mainImg = c.mainImg, longDecs = c.longDecs }).Where(c => c.Id == id).ToList();
+                List<Company> compModels = db.Company.Select(c => new Company { Id = c.Id, Name = c.Name, mainImg = c.mainImg, longDecs = c.longDecs, price = c.price, currentSum = c.currentSum}).Where(c => c.Id == id).ToList();
                 List<Likes> Likes = db.Likes.Select(c => new Likes { likeUp = c.likeUp, likeDown = c.likeDown, CompanyId = c.CompanyId}).Where(c => c.CompanyId == id).ToList();
                 List<Reward> Rewards = db.Reward.Select(s => new Reward { companyId = s.companyId, rewardDesc = s.rewardDesc, rewardPrice = s.rewardPrice }).Where(c => c.companyId == id).ToList();
                 DetailsViewModel details;

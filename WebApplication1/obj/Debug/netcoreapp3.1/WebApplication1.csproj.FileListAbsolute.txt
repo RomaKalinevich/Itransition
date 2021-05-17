@@ -190,3 +190,5 @@ E:\itransition\WebApplication1\WebApplication1\obj\Debug\netcoreapp3.1\staticweb
 E:\itransition\WebApplication1\WebApplication1\obj\Debug\netcoreapp3.1\WebApplication1.dll
 E:\itransition\WebApplication1\WebApplication1\obj\Debug\netcoreapp3.1\WebApplication1.pdb
 E:\itransition\WebApplication1\WebApplication1\obj\Debug\netcoreapp3.1\WebApplication1.genruntimeconfig.cache
+E:\itransition\WebApplication1\WebApplication1\obj\Debug\netcoreapp3.1\WebApplication1.csprojAssemblyReference.cache
+E:\itransition\WebApplication1\WebApplication1\obj\Debug\netcoreapp3.1\Razor\Views\Home\Edit.cshtml.g.cs

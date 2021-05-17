@@ -6,9 +6,9 @@
     {
 
         <h2>Компания @comp.Name</h2>
-        @if (User.Identity.IsAuthenticated)
+        @if (User.Identity.IsAuthenticated || User.IsInRole("Admin"))
             {
-                <dd><button type="button" class="btn btn-sm btn-outline-secondary">Edit</button></dd>
+                <dd><a type="submit" asp-action="Edit" asp-controller="Home" asp-route-id="@comp.Id" class="btn btn-sm btn-outline-secondary">Edit</a></dd>
             }
         <div>
             <dl class="dl-horizontal">
@@ -25,24 +25,21 @@
                 </dt>
                 <dt>Описание</dt>
                 <dd>@comp.longDecs</dd>
-                <dt>Цена: @comp.price    Собрано:@comp.currentSum </dt>
-                <dt>@comp.price</dt>
-                <dt>Собрано</dt>
-                <dt>@comp.currentSum</dt>
+                <dt>Цена: @comp.price    Собрано: @comp.currentSum </dt>
                 <dt>
                     <h3>Бонусы!</h3>
-                    <form method="post" asp-action="Buy" asp-controller="Reward">
-                        @{ foreach (Reward reward in Model.rewards)
+                        @{  if (Model.rewards.Count != 0)
                             {
+                                foreach (Reward reward in Model.rewards)
+                                {
                                 <div>
-                                    <a type="submit" asp-action="Buy" asp-controller="Reward">Buy</a>
+                                    <a type="submit" asp-action="Buy" asp-controller="Reward" asp-route-id="@comp.Id" asp-route-rewardPrice="@reward.rewardPrice">Buy</a>
                                     <label>Подарок - @reward.rewardDesc</label>
-                                    <label>Оплата - @reward.rewardPrice</label>
-                                    <label style="visibility: hidden;">@comp.Id</label><br/>
+                                    <label name="price">Оплата - @reward.rewardPrice</label>
                                  </div>
+                                    }
+                                }
                             }
-                        }
-                    </form>
                     <a type="submit" method="post" asp-action="reward" asp-controller="Reward" asp-route-id="@comp.Id" class="btn btn-link">Add reward</a>
                 </dt>
             </dl>

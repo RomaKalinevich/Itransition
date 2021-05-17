@@ -21,7 +21,7 @@ namespace WebApplication1.Models
         {
             if (!optionsBuilder.IsConfigured)
             {
-                optionsBuilder.UseSqlServer("Server=(localdb)\\mssqllocaldb;Database=userandcompanydb;Trusted_Connection=True;");
+                optionsBuilder.UseSqlServer("Data Source=tcp:newitransdb.database.windows.net,1433;Initial Catalog=WebApplication1_db;User Id=@newitransdb;Password=");
             }
         }
         public DbSet<Company> Company { get; set; }

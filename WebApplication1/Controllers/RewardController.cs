@@ -20,5 +20,12 @@ namespace WebApplication1.Controllers
             db.SaveChanges();
             return RedirectToAction("Details", "Home", new { id = Id });
         }
+        public async Task<IActionResult> Buy(Guid Id, ushort rewardPrice)
+        {
+            Company result = db.Company.Where(p => p.Id == Id).FirstOrDefault();
+            result.currentSum += rewardPrice;
+            db.SaveChanges();
+            return RedirectToAction("Details", "Home", new { id = Id });
+        }
     }
 }

@@ -1,0 +1,32 @@
+﻿@model WebApplication1.Models.Company
+@{
+    ViewBag.Title = "Редактирование компании";
+}
+<form asp-action="Edit" asp-controller="Home" asp-route-id="@Model.Id">
+    <div class="form-group">
+        <label asp-for="Name" class="control-label">Имя</label>
+        <input type="text" asp-for="Name" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="mainImg" class="control-label">Изображние</label>
+        <input type="text" asp-for="mainImg" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="shortDesc" class="control-label">Краткое описание</label>
+        <input type="text" asp-for="shortDesc" class="form-control" />
+    </div>
+        <label asp-for="longDecs" class="control-label">Полное описание</label>
+        <input type="text" asp-for="longDecs" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="price" class="control-label">Цена</label>
+        <input type="number" asp-for="price" class="form-control" />
+    </div>
+    <div class="form-group">
+        <input type="submit" value="Сохранить" class="btn btn-default" />
+    </div>
+    <div class="form-group" style="visibility:hidden">
+        <label asp-for="currentSum" class="control-label">Цена</label>
+        <input type="number" asp-for="currentSum" class="form-control" />
+    </div>
+</form>
