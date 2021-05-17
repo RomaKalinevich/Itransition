@@ -8,6 +8,7 @@ using Microsoft.Extensions.Logging;
 using WebApplication1.Models;
 using Microsoft.AspNetCore.Identity;
 using WebApplication1.ViewModels;
+using Microsoft.EntityFrameworkCore;
 
 namespace WebApplication1.Controllers
 {
@@ -31,7 +32,7 @@ namespace WebApplication1.Controllers
         {
             if (ModelState.IsValid)
             {
-                Company company = new Company(model.Name, model.mainImg, model.shortDesc, model.longDecs,
+                Company company = new Company(model.Name, model.mainImg, model.video, model.shortDesc, model.longDecs,
                                               model.price);
                 db.AddRange(company);
             }
@@ -59,6 +60,28 @@ namespace WebApplication1.Controllers
             // удаляем аутентификационные куки
             await _signInManager.SignOutAsync();
             return RedirectToAction("Index", "Home");
+        }
+        public async Task<IActionResult> Details(Guid id)
+        {
+            if (id != null)
+            {
+                List<Company> compModels = db.Company.Select(c => new Company { Id = c.Id, Name = c.Name, mainImg = c.mainImg, longDecs = c.longDecs }).Where(c => c.Id == id).ToList();
+                List<Likes> Likes = db.Likes.Select(c => new Likes { likeUp = c.likeUp, likeDown = c.likeDown, CompanyId = c.CompanyId}).Where(c => c.CompanyId == id).ToList();
+                List<Reward> Rewards = db.Reward.Select(s => new Reward { companyId = s.companyId, rewardDesc = s.rewardDesc, rewardPrice = s.rewardPrice }).Where(c => c.companyId == id).ToList();
+                DetailsViewModel details;
+                if (Likes.Count != 0)
+                {
+                    details = new DetailsViewModel { companies = compModels, likes = Likes, rewards = Rewards };
+                    return View(details);
+                }
+                Likes like = new Likes { CompanyId = id, likeUp = 0, likeDown = 0 };
+                db.AddRange(like);
+                db.SaveChanges();
+                Likes.Add(like);
+                details = new DetailsViewModel { companies = compModels, likes = Likes };
+                return View(details);
+            }
+            return NotFound();
         }
     }
 }

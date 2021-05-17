@@ -21,4 +21,33 @@
     <div>
         <input type="submit" value="Войти" />
     </div>
+
+    <div id="fb-root">
+        <div 
+             class="fb-login-button" data-width="300" data-size="large" data-button-type="continue_with" data-layout="default" data-auto-logout-link="false" data-use-continue-as="false">
+        </div>
+    </div>
 </form>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v10.0&appId=316312386569689&autoLogAppEvents=1" nonce="4pUxmiZ4"></script>
+<script>
+    //FB.getLoginStatus;
+    window.fbAsyncInit = function () {
+        FB.init({
+            appId: '316312386569689',
+            cookie: true,
+            xfbml: true,
+            version: 'v10.0'
+        });
+
+        FB.AppEvents.logPageView();
+
+    };
+
+    (function (d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) { return; }
+        js = d.createElement(s); js.id = id;
+        js.src = "https://connect.facebook.net/en_US/sdk.js";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+</script>

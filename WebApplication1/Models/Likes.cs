@@ -7,9 +7,13 @@ namespace WebApplication1.Models
 {
     public class Likes
     {
-        public string Id { get; set; }
-        public string CompanyId { get; set; }
-        public bool Like { get; set; }
-        public int CommentId { get; set; }
+        public Likes()
+        {
+            Id = Guid.NewGuid();
+        }
+        public Guid Id { get; set; }
+        public Guid CompanyId { get; set; }
+        public int likeUp { get; set; }
+        public int likeDown { get; set; }
     }
 }

@@ -7,9 +7,10 @@ namespace WebApplication1.Models
 {
     public class Rating
     {
-        public string Id { get; set; }
-        public string UserId { get; set; }
-        public bool Rate { get; set; }
-        public int CompanyId { get; set; }
+        public Guid Id { get; set; }
+        public Guid CompanyId { get; set; }
+        public ushort Rate { get; set; }
+        public int Count { get; set; }
+        public int Sum { get; set; }
     }
 }

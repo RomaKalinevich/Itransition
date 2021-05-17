@@ -1,0 +1,17 @@
+﻿@model WebApplication1.ViewModels.RewardViewModel
+    <h2>Добавить вознаграждение</h2>
+    <form method="post" asp-controller="Reward" asp-action="Reward">
+        <div>
+            <label asp-for="rewardDesc"></label><br />
+            <input asp-for="rewardDesc" />
+            <span asp-validation-for="rewardDesc"></span>
+        </div>
+        <div>
+            <label asp-for="rewardPrice"></label><br />
+            <input asp-for="rewardPrice" />
+            <span asp-validation-for="rewardPrice"></span>
+        </div>
+        <div>
+            <input type="submit" value="Создать" />
+        </div>
+    </form>

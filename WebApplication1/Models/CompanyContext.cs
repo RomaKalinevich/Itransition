@@ -15,6 +15,7 @@ namespace WebApplication1.Models
         public CompanyContext(DbContextOptions<CompanyContext> options)
             : base(options)
         {
+            Database.EnsureCreated();
         }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
@@ -28,13 +29,15 @@ namespace WebApplication1.Models
         public DbSet<Comments> Comments { get; set; }
         public DbSet<Likes> Likes { get; set; }
         public DbSet<Rating> Rating { get; set; }
-        //protected override void OnModelCreating(ModelBuilder builder)
-        //{
+        public DbSet<Reward> Reward { get; set; }
+        
+        protected override void OnModelCreating(ModelBuilder builder)
+        {
 
-        //    builder.Entity<Company>().HasKey(x => x.Name);
+            builder.Entity<Company>().HasKey(x => x.Id);
 
-        //    base.OnModelCreating(builder);
-        //}
+            base.OnModelCreating(builder);
+        }
     }
 
 }

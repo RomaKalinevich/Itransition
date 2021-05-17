@@ -16,11 +16,12 @@ namespace WebApplication1.Models
             Id = Guid.NewGuid();
         }
 
-        public Company(string name, string mainImg, string shortDesc, string longDesc,
+        public Company(string name, string mainImg, string video, string shortDesc, string longDesc,
                        ushort price) : this()
         {
             this.Name = name;
             this.mainImg = mainImg;
+            this.video = video;
             this.shortDesc = shortDesc;
             this.longDecs = longDesc;
             this.price = price;
@@ -39,5 +40,7 @@ namespace WebApplication1.Models
         public ushort currentSum { get; set; }
         public ushort likesUp { get; set; }
         public ushort likesDown { get; set; }
+        public string video { get; set; }
+
     }
 }

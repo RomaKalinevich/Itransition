@@ -15,6 +15,9 @@ namespace WebApplication1.ViewModels
         [Display(Name = "Add image")]
         public string mainImg { get; set; }
         [Required]
+        [Display(Name = "Link to video")]
+        public string video { get; set; }
+        [Required]
         [Display(Name = "Short description")]
         public string shortDesc { get; set; }
         [Required]

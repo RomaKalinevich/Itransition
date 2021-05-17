@@ -31,7 +31,6 @@ namespace WebApplication1
                 options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
             services.AddDbContext<ApplicationContext>(options =>
                 options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
-
             services.AddIdentity<User, IdentityRole>(options =>
             {
                 options.Password.RequiredLength = 1;   // минимальная длина
@@ -53,7 +52,6 @@ namespace WebApplication1
 
             app.UseHttpsRedirection();
             app.UseStaticFiles();
-
             app.UseRouting();
 
             app.UseAuthentication();    // подключение аутентификации

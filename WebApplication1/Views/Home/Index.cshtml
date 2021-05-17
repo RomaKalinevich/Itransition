@@ -29,18 +29,8 @@
                         <p class="card-text">@company.shortDesc</p>
                         <div class="d-flex justify-content-between align-items-center">
                             <div class="btn-group">
-                                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                                @if (User.Identity.IsAuthenticated)
-                                {
-                                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                                }
+                                <a type="submit" asp-action="Details" asp-controller="Home" asp-route-id="@company.Id" class="btn btn-sm btn-outline-secondary">View</a>
                             </div>
-                            <button type="button" class="btn btn-primary small">
-                                Нравится <span class="badge badge-light">@company.likesUp</span>
-                            </button>
-                            <button type="button" class="btn btn-primary small">
-                                Не нравится <span class="badge badge-light">@company.likesDown</span>
-                            </button>
                         </div>
                     </div>
                 </div>

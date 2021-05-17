@@ -1,0 +1,479 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword />
+    <_PublishTargetUrl>ftp://itra.somee.com/www.itra.somee.com/www.itra.somee.com</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="appsettings.Development.json">
+      <publishTime>05/11/2021 15:25:45</publishTime>
+    </File>
+    <File Include="appsettings.json">
+      <publishTime>05/13/2021 23:25:14</publishTime>
+    </File>
+    <File Include="EntityFramework.dll">
+      <publishTime>04/16/2020 20:38:44</publishTime>
+    </File>
+    <File Include="EntityFramework.SqlServer.dll">
+      <publishTime>04/16/2020 20:39:00</publishTime>
+    </File>
+    <File Include="Microsoft.AspNetCore.Cryptography.Internal.dll">
+      <publishTime>03/17/2021 20:34:36</publishTime>
+    </File>
+    <File Include="Microsoft.AspNetCore.Cryptography.KeyDerivation.dll">
+      <publishTime>03/17/2021 20:34:36</publishTime>
+    </File>
+    <File Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll">
+      <publishTime>03/17/2021 20:36:16</publishTime>
+    </File>
+    <File Include="Microsoft.Data.SqlClient.dll">
+      <publishTime>08/25/2020 23:24:48</publishTime>
+    </File>
+    <File Include="Microsoft.DotNet.PlatformAbstractions.dll">
+      <publishTime>05/15/2018 21:01:34</publishTime>
+    </File>
+    <File Include="Microsoft.EntityFrameworkCore.Abstractions.dll">
+      <publishTime>03/11/2021 18:35:30</publishTime>
+    </File>
+    <File Include="Microsoft.EntityFrameworkCore.dll">
+      <publishTime>03/11/2021 18:35:48</publishTime>
+    </File>
+    <File Include="Microsoft.EntityFrameworkCore.Relational.dll">
+      <publishTime>03/11/2021 18:36:28</publishTime>
+    </File>
+    <File Include="Microsoft.EntityFrameworkCore.SqlServer.dll">
+      <publishTime>03/11/2021 18:36:44</publishTime>
+    </File>
+    <File Include="Microsoft.Extensions.Caching.Abstractions.dll">
+      <publishTime>10/19/2020 18:48:26</publishTime>
+    </File>
+    <File Include="Microsoft.Extensions.Caching.Memory.dll">
+      <publishTime>10/19/2020 18:48:36</publishTime>
+    </File>
+    <File Include="Microsoft.Extensions.Configuration.Abstractions.dll">
+      <publishTime>10/19/2020 18:48:28</publishTime>
+    </File>
+    <File Include="Microsoft.Extensions.Configuration.dll">
+      <publishTime>10/19/2020 18:48:54</publishTime>
+    </File>
+    <File Include="Microsoft.Extensions.Configuration.FileExtensions.dll">
+      <publishTime>10/19/2020 18:50:50</publishTime>
+    </File>
+    <File Include="Microsoft.Extensions.Configuration.Json.dll">
+      <publishTime>10/19/2020 18:51:46</publishTime>
+    </File>
+    <File Include="Microsoft.Extensions.DependencyInjection.Abstractions.dll">
+      <publishTime>10/19/2020 18:48:00</publishTime>
+    </File>
+    <File Include="Microsoft.Extensions.DependencyInjection.dll">
+      <publishTime>11/26/2020 01:59:08</publishTime>
+    </File>
+    <File Include="Microsoft.Extensions.DependencyModel.dll">
+      <publishTime>05/15/2018 21:01:34</publishTime>
+    </File>
+    <File Include="Microsoft.Extensions.FileProviders.Abstractions.dll">
+      <publishTime>10/19/2020 18:48:42</publishTime>
+    </File>
+    <File Include="Microsoft.Extensions.FileProviders.Physical.dll">
+      <publishTime>10/19/2020 18:49:32</publishTime>
+    </File>
+    <File Include="Microsoft.Extensions.FileSystemGlobbing.dll">
+      <publishTime>10/19/2020 18:48:04</publishTime>
+    </File>
+    <File Include="Microsoft.Extensions.Identity.Core.dll">
+      <publishTime>03/17/2021 20:34:38</publishTime>
+    </File>
+    <File Include="Microsoft.Extensions.Identity.Stores.dll">
+      <publishTime>03/17/2021 20:35:24</publishTime>
+    </File>
+    <File Include="Microsoft.Extensions.Logging.Abstractions.dll">
+      <publishTime>10/19/2020 18:48:04</publishTime>
+    </File>
+    <File Include="Microsoft.Extensions.Logging.dll">
+      <publishTime>10/19/2020 18:53:18</publishTime>
+    </File>
+    <File Include="Microsoft.Extensions.Options.dll">
+      <publishTime>10/19/2020 18:48:30</publishTime>
+    </File>
+    <File Include="Microsoft.Extensions.Primitives.dll">
+      <publishTime>10/19/2020 18:48:36</publishTime>
+    </File>
+    <File Include="Microsoft.Identity.Client.dll">
+      <publishTime>05/18/2020 20:11:54</publishTime>
+    </File>
+    <File Include="Microsoft.IdentityModel.JsonWebTokens.dll">
+      <publishTime>10/18/2019 23:39:24</publishTime>
+    </File>
+    <File Include="Microsoft.IdentityModel.Logging.dll">
+      <publishTime>10/18/2019 23:40:20</publishTime>
+    </File>
+    <File Include="Microsoft.IdentityModel.Protocols.dll">
+      <publishTime>10/18/2019 23:41:02</publishTime>
+    </File>
+    <File Include="Microsoft.IdentityModel.Protocols.OpenIdConnect.dll">
+      <publishTime>10/18/2019 23:48:48</publishTime>
+    </File>
+    <File Include="Microsoft.IdentityModel.Tokens.dll">
+      <publishTime>10/18/2019 23:43:40</publishTime>
+    </File>
+    <File Include="Newtonsoft.Json.dll">
+      <publishTime>03/20/2017 20:03:18</publishTime>
+    </File>
+    <File Include="runtimes/unix/lib/netcoreapp2.1/System.Data.SqlClient.dll">
+      <publishTime>01/17/2020 18:41:36</publishTime>
+    </File>
+    <File Include="runtimes/unix/lib/netcoreapp3.1/Microsoft.Data.SqlClient.dll">
+      <publishTime>08/25/2020 23:25:12</publishTime>
+    </File>
+    <File Include="runtimes/win-arm/native/Microsoft.Data.SqlClient.SNI.dll">
+      <publishTime>08/25/2020 20:34:56</publishTime>
+    </File>
+    <File Include="runtimes/win-arm/native/Microsoft.Data.SqlClient.SNI.pdb">
+      <publishTime>08/25/2020 20:31:56</publishTime>
+    </File>
+    <File Include="runtimes/win-arm64/native/Microsoft.Data.SqlClient.SNI.dll">
+      <publishTime>08/25/2020 20:35:06</publishTime>
+    </File>
+    <File Include="runtimes/win-arm64/native/Microsoft.Data.SqlClient.SNI.pdb">
+      <publishTime>08/25/2020 20:31:56</publishTime>
+    </File>
+    <File Include="runtimes/win-arm64/native/sni.dll">
+      <publishTime>07/12/2017 11:24:24</publishTime>
+    </File>
+    <File Include="runtimes/win-x64/native/Microsoft.Data.SqlClient.SNI.dll">
+      <publishTime>08/25/2020 20:34:56</publishTime>
+    </File>
+    <File Include="runtimes/win-x64/native/Microsoft.Data.SqlClient.SNI.pdb">
+      <publishTime>08/25/2020 20:31:56</publishTime>
+    </File>
+    <File Include="runtimes/win-x64/native/sni.dll">
+      <publishTime>07/12/2017 11:24:22</publishTime>
+    </File>
+    <File Include="runtimes/win-x86/native/Microsoft.Data.SqlClient.SNI.dll">
+      <publishTime>08/25/2020 20:34:56</publishTime>
+    </File>
+    <File Include="runtimes/win-x86/native/Microsoft.Data.SqlClient.SNI.pdb">
+      <publishTime>08/25/2020 20:31:56</publishTime>
+    </File>
+    <File Include="runtimes/win-x86/native/sni.dll">
+      <publishTime>07/12/2017 11:24:22</publishTime>
+    </File>
+    <File Include="runtimes/win/lib/netcoreapp2.1/System.Data.SqlClient.dll">
+      <publishTime>01/17/2020 18:41:44</publishTime>
+    </File>
+    <File Include="runtimes/win/lib/netcoreapp3.1/Microsoft.Data.SqlClient.dll">
+      <publishTime>08/25/2020 23:24:48</publishTime>
+    </File>
+    <File Include="runtimes/win/lib/netstandard2.0/System.Runtime.Caching.dll">
+      <publishTime>11/15/2019 08:53:44</publishTime>
+    </File>
+    <File Include="runtimes/win/lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll">
+      <publishTime>11/15/2019 08:53:46</publishTime>
+    </File>
+    <File Include="System.CodeDom.dll">
+      <publishTime>11/15/2019 08:36:56</publishTime>
+    </File>
+    <File Include="System.Collections.Immutable.dll">
+      <publishTime>10/19/2020 18:37:40</publishTime>
+    </File>
+    <File Include="System.ComponentModel.Annotations.dll">
+      <publishTime>10/19/2020 18:37:54</publishTime>
+    </File>
+    <File Include="System.Configuration.ConfigurationManager.dll">
+      <publishTime>11/15/2019 08:37:04</publishTime>
+    </File>
+    <File Include="System.Data.SqlClient.dll">
+      <publishTime>01/17/2020 18:28:34</publishTime>
+    </File>
+    <File Include="System.Diagnostics.DiagnosticSource.dll">
+      <publishTime>12/12/2020 02:40:42</publishTime>
+    </File>
+    <File Include="System.IdentityModel.Tokens.Jwt.dll">
+      <publishTime>10/18/2019 23:38:18</publishTime>
+    </File>
+    <File Include="System.Runtime.Caching.dll">
+      <publishTime>11/15/2019 08:37:36</publishTime>
+    </File>
+    <File Include="System.Security.Cryptography.ProtectedData.dll">
+      <publishTime>11/15/2019 08:37:42</publishTime>
+    </File>
+    <File Include="System.Text.Json.dll">
+      <publishTime>10/19/2020 18:47:22</publishTime>
+    </File>
+    <File Include="web.config">
+      <publishTime>05/13/2021 23:27:47</publishTime>
+    </File>
+    <File Include="WebApplication1.deps.json">
+      <publishTime>05/13/2021 23:27:47</publishTime>
+    </File>
+    <File Include="WebApplication1.dll">
+      <publishTime>05/13/2021 23:25:32</publishTime>
+    </File>
+    <File Include="WebApplication1.exe">
+      <publishTime>05/13/2021 23:25:32</publishTime>
+    </File>
+    <File Include="WebApplication1.pdb">
+      <publishTime>05/13/2021 23:25:32</publishTime>
+    </File>
+    <File Include="WebApplication1.runtimeconfig.json">
+      <publishTime>05/13/2021 23:08:14</publishTime>
+    </File>
+    <File Include="WebApplication1.Views.dll">
+      <publishTime>05/13/2021 23:25:41</publishTime>
+    </File>
+    <File Include="WebApplication1.Views.pdb">
+      <publishTime>05/13/2021 23:25:41</publishTime>
+    </File>
+    <File Include="wwwroot/css/ajax-loader.gif">
+      <publishTime>11/04/2017 04:00:44</publishTime>
+    </File>
+    <File Include="wwwroot/css/animate.css">
+      <publishTime>11/04/2017 04:00:44</publishTime>
+    </File>
+    <File Include="wwwroot/css/bootstrap.min.css">
+      <publishTime>11/04/2017 04:00:44</publishTime>
+    </File>
+    <File Include="wwwroot/css/icomoon.css">
+      <publishTime>11/04/2017 04:00:44</publishTime>
+    </File>
+    <File Include="wwwroot/css/open-iconic-bootstrap.min.css">
+      <publishTime>11/04/2017 04:00:44</publishTime>
+    </File>
+    <File Include="wwwroot/css/owl.carousel.min.css">
+      <publishTime>11/04/2017 04:00:44</publishTime>
+    </File>
+    <File Include="wwwroot/css/owl.theme.default.min.css">
+      <publishTime>11/04/2017 04:00:44</publishTime>
+    </File>
+    <File Include="wwwroot/css/site.css">
+      <publishTime>05/04/2021 18:33:26</publishTime>
+    </File>
+    <File Include="wwwroot/css/style.css">
+      <publishTime>11/04/2017 04:00:44</publishTime>
+    </File>
+    <File Include="wwwroot/favicon.ico">
+      <publishTime>05/04/2021 18:33:26</publishTime>
+    </File>
+    <File Include="wwwroot/images/img_1.jpg">
+      <publishTime>11/04/2017 04:00:44</publishTime>
+    </File>
+    <File Include="wwwroot/images/img_10.jpg">
+      <publishTime>11/04/2017 04:00:44</publishTime>
+    </File>
+    <File Include="wwwroot/images/img_11.jpg">
+      <publishTime>11/04/2017 04:00:44</publishTime>
+    </File>
+    <File Include="wwwroot/images/img_12.jpg">
+      <publishTime>11/04/2017 04:00:44</publishTime>
+    </File>
+    <File Include="wwwroot/images/img_13.jpg">
+      <publishTime>11/04/2017 04:00:44</publishTime>
+    </File>
+    <File Include="wwwroot/images/img_14.jpg">
+      <publishTime>11/04/2017 04:00:44</publishTime>
+    </File>
+    <File Include="wwwroot/images/img_15.jpg">
+      <publishTime>11/04/2017 04:00:44</publishTime>
+    </File>
+    <File Include="wwwroot/images/img_16.jpg">
+      <publishTime>11/04/2017 04:00:44</publishTime>
+    </File>
+    <File Include="wwwroot/images/img_17.jpg">
+      <publishTime>11/04/2017 04:00:44</publishTime>
+    </File>
+    <File Include="wwwroot/images/img_18.jpg">
+      <publishTime>11/04/2017 04:00:44</publishTime>
+    </File>
+    <File Include="wwwroot/images/img_19.jpg">
+      <publishTime>11/04/2017 04:00:44</publishTime>
+    </File>
+    <File Include="wwwroot/images/img_2.jpg">
+      <publishTime>11/04/2017 04:00:44</publishTime>
+    </File>
+    <File Include="wwwroot/images/img_20.jpg">
+      <publishTime>11/04/2017 04:00:44</publishTime>
+    </File>
+    <File Include="wwwroot/images/img_21.jpg">
+      <publishTime>11/04/2017 04:00:44</publishTime>
+    </File>
+    <File Include="wwwroot/images/img_3.jpg">
+      <publishTime>11/04/2017 04:00:44</publishTime>
+    </File>
+    <File Include="wwwroot/images/img_4.jpg">
+      <publishTime>11/04/2017 04:00:44</publishTime>
+    </File>
+    <File Include="wwwroot/images/img_5.jpg">
+      <publishTime>11/04/2017 04:00:44</publishTime>
+    </File>
+    <File Include="wwwroot/images/img_6.jpg">
+      <publishTime>11/04/2017 04:00:44</publishTime>
+    </File>
+    <File Include="wwwroot/images/img_7.jpg">
+      <publishTime>11/04/2017 04:00:44</publishTime>
+    </File>
+    <File Include="wwwroot/images/img_8.jpg">
+      <publishTime>11/04/2017 04:00:44</publishTime>
+    </File>
+    <File Include="wwwroot/images/img_9.jpg">
+      <publishTime>11/04/2017 04:00:44</publishTime>
+    </File>
+    <File Include="wwwroot/images/img_bg_1.jpg">
+      <publishTime>11/04/2017 04:00:44</publishTime>
+    </File>
+    <File Include="wwwroot/images/img_bg_2.jpg">
+      <publishTime>11/04/2017 04:00:44</publishTime>
+    </File>
+    <File Include="wwwroot/images/person_1.jpg">
+      <publishTime>11/04/2017 04:00:44</publishTime>
+    </File>
+    <File Include="wwwroot/images/person_2.jpg">
+      <publishTime>11/04/2017 04:00:44</publishTime>
+    </File>
+    <File Include="wwwroot/images/person_3.jpg">
+      <publishTime>11/04/2017 04:00:44</publishTime>
+    </File>
+    <File Include="wwwroot/images/phone_3.png">
+      <publishTime>11/04/2017 04:00:44</publishTime>
+    </File>
+    <File Include="wwwroot/images/square-person_1.jpg">
+      <publishTime>11/04/2017 04:00:44</publishTime>
+    </File>
+    <File Include="wwwroot/images/square-person_2.jpg">
+      <publishTime>11/04/2017 04:00:44</publishTime>
+    </File>
+    <File Include="wwwroot/images/square-person_3.jpg">
+      <publishTime>11/04/2017 04:00:44</publishTime>
+    </File>
+    <File Include="wwwroot/js/bootstrap.min.js">
+      <publishTime>05/04/2021 21:43:22</publishTime>
+    </File>
+    <File Include="wwwroot/js/imagesloaded.pkgd.min.js">
+      <publishTime>11/04/2017 04:00:44</publishTime>
+    </File>
+    <File Include="wwwroot/js/jquery-3.2.1.slim.min.js">
+      <publishTime>11/04/2017 04:00:44</publishTime>
+    </File>
+    <File Include="wwwroot/js/jquery.waypoints.min.js">
+      <publishTime>11/04/2017 04:00:44</publishTime>
+    </File>
+    <File Include="wwwroot/js/main.js">
+      <publishTime>11/04/2017 04:00:44</publishTime>
+    </File>
+    <File Include="wwwroot/js/owl.carousel.min.js">
+      <publishTime>11/04/2017 04:00:44</publishTime>
+    </File>
+    <File Include="wwwroot/js/popper.min.js">
+      <publishTime>11/04/2017 04:00:44</publishTime>
+    </File>
+    <File Include="wwwroot/js/site.js">
+      <publishTime>05/04/2021 18:33:26</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css">
+      <publishTime>05/04/2021 18:33:26</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css.map">
+      <publishTime>05/04/2021 18:33:26</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css">
+      <publishTime>05/04/2021 18:33:26</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css.map">
+      <publishTime>05/04/2021 18:33:26</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css">
+      <publishTime>05/04/2021 18:33:26</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css.map">
+      <publishTime>05/04/2021 18:33:26</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css">
+      <publishTime>05/04/2021 18:33:26</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map">
+      <publishTime>05/04/2021 18:33:26</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/css/bootstrap.css">
+      <publishTime>05/04/2021 18:33:26</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/css/bootstrap.css.map">
+      <publishTime>05/04/2021 18:33:26</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/css/bootstrap.min.css">
+      <publishTime>05/04/2021 18:33:26</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/css/bootstrap.min.css.map">
+      <publishTime>05/04/2021 18:33:26</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js">
+      <publishTime>05/04/2021 18:33:26</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js.map">
+      <publishTime>05/04/2021 18:33:26</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js">
+      <publishTime>05/04/2021 18:33:26</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map">
+      <publishTime>05/04/2021 18:33:26</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/js/bootstrap.js">
+      <publishTime>05/04/2021 18:33:26</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/js/bootstrap.js.map">
+      <publishTime>05/04/2021 18:33:26</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/js/bootstrap.min.js">
+      <publishTime>05/04/2021 18:33:26</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/js/bootstrap.min.js.map">
+      <publishTime>05/04/2021 18:33:26</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/LICENSE">
+      <publishTime>05/04/2021 18:33:26</publishTime>
+    </File>
+    <File Include="wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js">
+      <publishTime>05/04/2021 18:33:26</publishTime>
+    </File>
+    <File Include="wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js">
+      <publishTime>05/04/2021 18:33:26</publishTime>
+    </File>
+    <File Include="wwwroot/lib/jquery-validation-unobtrusive/LICENSE.txt">
+      <publishTime>05/04/2021 18:33:26</publishTime>
+    </File>
+    <File Include="wwwroot/lib/jquery-validation/dist/additional-methods.js">
+      <publishTime>05/04/2021 18:33:26</publishTime>
+    </File>
+    <File Include="wwwroot/lib/jquery-validation/dist/additional-methods.min.js">
+      <publishTime>05/04/2021 18:33:26</publishTime>
+    </File>
+    <File Include="wwwroot/lib/jquery-validation/dist/jquery.validate.js">
+      <publishTime>05/04/2021 18:33:26</publishTime>
+    </File>
+    <File Include="wwwroot/lib/jquery-validation/dist/jquery.validate.min.js">
+      <publishTime>05/04/2021 18:33:26</publishTime>
+    </File>
+    <File Include="wwwroot/lib/jquery-validation/LICENSE.md">
+      <publishTime>05/04/2021 18:33:26</publishTime>
+    </File>
+    <File Include="wwwroot/lib/jquery/dist/jquery.js">
+      <publishTime>05/04/2021 18:33:26</publishTime>
+    </File>
+    <File Include="wwwroot/lib/jquery/dist/jquery.min.js">
+      <publishTime>05/04/2021 18:33:26</publishTime>
+    </File>
+    <File Include="wwwroot/lib/jquery/dist/jquery.min.map">
+      <publishTime>05/04/2021 18:33:26</publishTime>
+    </File>
+    <File Include="wwwroot/lib/jquery/LICENSE.txt">
+      <publishTime>05/04/2021 18:33:26</publishTime>
+    </File>
+    <File Include="wwwroot/scss/style.scss">
+      <publishTime>11/04/2017 04:00:44</publishTime>
+    </File>
+  </ItemGroup>
+</Project>
